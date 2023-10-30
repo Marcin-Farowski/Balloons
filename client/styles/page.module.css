@@ -1,0 +1,13 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/images/login-register-background.png");
+  background-size: cover;
+}
+
+.headerText {
+  font-family: var(--font-cormorant);
+  font-size: 24px;
+  color: var(--clr-neutral-999);
+  padding: 24px 28px;
+}

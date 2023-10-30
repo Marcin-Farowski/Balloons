@@ -1,0 +1,75 @@
+.formContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  right: 146px;
+  transform: translateY(-50%);
+  color: var(--clr-neutral-999);
+  width: 450px;
+  padding: 52px 50px;
+  border-radius: 20px;
+  background: rgba(4, 2, 7, 0.7);
+}
+
+.loginText {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.toStartAdventureText {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.input {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-999);
+  border: 2px solid var(--clr-neutral-500);
+  border-radius: 20px;
+  padding: 21px 17px;
+  margin-bottom: 10px;
+}
+
+.firstInput {
+  margin-bottom: 30px;
+}
+
+.input::placeholder {
+  color: var(--clr-neutral-999);
+  font-size: 14px;
+}
+
+.forgotPassword {
+  text-align: right;
+  margin-right: 14px;
+  margin-bottom: 32px;
+  color: var(--clr-neutral-999);
+}
+
+.forgotPassword:hover {
+  color: var(--clr-neutral-600);
+}
+
+.loginButton {
+  background-color: var(--clr-primary-500);
+  color: var(--clr-neutral-999);
+  height: 60px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.signUp {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signUp a {
+  color: var(--clr-accent-500);
+  text-decoration: none;
+}
+
+.signUp a:hover {
+  color: var(--clr-neutral-600);
+}

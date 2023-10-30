@@ -1,0 +1,51 @@
+:root {
+  --clr-primary-500: #b6352f;
+  --clr-accent-500: #e59208;
+
+  --clr-neutral-100: #040207;
+  --clr-neutral-500: #242424;
+  --clr-neutral-600: #c8c8c8;
+  --clr-neutral-900: #f0f0f0;
+  --clr-neutral-999: #fff;
+
+  /* FONTS: */
+  /* var(--font-plus-jakarta-sans) */
+  /* var(--font-cormorant) */
+}
+
+html {
+  font-family: var(--font-plus-jakarta-sans);
+}
+
+* {
+  /* Remove default margin */
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  /* Set box-sizing to include padding and border in the element's total width and height,
+   simplifying size calculations and ensuring a more predictable layout. */
+  box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
