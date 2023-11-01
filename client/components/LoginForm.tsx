@@ -17,7 +17,7 @@ function LoginForm() {
       </a>
       <button className={styles.loginButton}>Log in</button>
       <div className={styles.signUp}>
-        Need an account? <a href="#">SIGN UP</a>
+        Need an account? <a href="/register">SIGN UP</a>
       </div>
     </div>
   );
