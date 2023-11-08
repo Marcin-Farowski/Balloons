@@ -1,9 +1,13 @@
 import React from "react";
+import Header from "@components/Header"
 
 function Home() {
   return (
     <div>
-      <img src="/assets/images/home-image.png" alt="" />
+      <Header/>
+      <div>
+        <img src="/assets/images/home-image.png" alt="Map" />
+      </div>
     </div>
   );
 }
