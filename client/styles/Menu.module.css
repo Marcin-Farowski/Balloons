@@ -1,0 +1,74 @@
+.infoContainer {
+    top: 0;
+    right: 0;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    width: 350px;
+    height: auto;
+    padding: 40px 0 40px 0;
+    background-color: var(--clr-neutral-999);
+}
+
+.closeIcon {
+    cursor: pointer;
+    height: 20px;
+    float: right;
+    padding-right: 40px;
+  }
+
+  .helloMessage {
+    display: flex;
+    color: var(--clr-neutral-100);
+    padding: 24px 40px 24px 40px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .userName {
+    font-weight: 500;
+    margin-left: 4px;
+  }
+
+  .listRow {
+    display: flex;
+    padding: 16px 40px 16px 40px;
+    align-items: center;
+  }
+
+  .listRow:hover{
+    background-color: var(--clr-neutral-800);
+  }
+
+/* .choosedeText {
+  color: var(--clr-primary-500);
+  font-size: 20px;
+  font-weight: 400;
+} */
+
+  .listIcon {
+    height: 20px;
+    margin-right: 16px;
+  }
+
+  .listText {
+    color: var(--clr-neutral-550);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .logOutIcon {
+    height: 15px;
+    margin-left: 10px;
+  }
+
+  .lastRow {
+    display: flex;
+    padding: 60px 40px 16px 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .listRow:hover, .logOutIcon:hover, .listText:hover{
+    cursor: pointer;
+  }

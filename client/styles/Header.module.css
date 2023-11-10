@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--clr-neutral-999);
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 40px;
   
     @media (min-width: 1200px) {
       height: 100px;
