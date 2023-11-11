@@ -28,7 +28,9 @@ export default function RootLayout({
       lang="en"
       className={`${plus_jakarta_sans.variable} ${cormorant.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
