@@ -4,6 +4,7 @@ import threading
 import time
 import json
 
+
 class StratosphericBalloonSimulation:
     def __init__(self, name, start_latitude, start_longitude):
         self.name = name
@@ -41,7 +42,11 @@ class StratosphericBalloonSimulation:
             "latitude": self.latitude,
             "longitude": self.longitude,
             "currentTime": current_time,
-            "altitude": self.altitude
+            "altitude": self.altitude,
+            "temperature": self.temperature,
+            "pressure": self.pressure,
+            "humidity": self.humidity,
+            "windSpeed": self.wind_speed
         }
         headers = {"Authorization": f"Bearer {jwt_token}"}
         response = requests.post("http://localhost:8080/api/v1/balloon/status", json=status, headers=headers)
@@ -50,8 +55,9 @@ class StratosphericBalloonSimulation:
 
     def report(self, current_time):
         """ Print the current state of the balloon. """
-        print(f"Time: {current_time}, Altitude: {self.altitude}m, Latitude: {self.latitude}, Longitude: {self.longitude}, "
-              f"Temperature: {self.temperature}C, Pressure: {self.pressure}hPa, Humidity: {self.humidity}%, Wind Speed: {self.wind_speed}km/h")
+        print(
+            f"Time: {current_time}, Altitude: {self.altitude}m, Latitude: {self.latitude}, Longitude: {self.longitude}, "
+            f"Temperature: {self.temperature}C, Pressure: {self.pressure}hPa, Humidity: {self.humidity}%, Wind Speed: {self.wind_speed}km/h")
 
     def start_simulation(self, jwt_token):
         start_time = time.time()
@@ -59,20 +65,26 @@ class StratosphericBalloonSimulation:
             current_time = time.time() - start_time
             self.update_conditions()
             self.send_status(jwt_token, current_time)
-            # Log to console
-            print(f"Time: {current_time}, Altitude: {self.altitude}, ...")
+            self.report(current_time)
             # Log to JSON file
             with open("balloon_status.json", "a") as file:
                 json.dump({"Time": current_time, "Altitude": self.altitude}, file)
                 file.write("\n")
             time.sleep(5)
+
+
 def authenticate_and_get_token():
-    response = requests.post("http://localhost:8080/api/v1/auth/authenticate", json={"email": "m.farowski@gmail.com", "password": "password"})
+    response = requests.post("http://localhost:8080/api/v1/auth/authenticate",
+                             json={"email": "m.farowski@gmail.com", "password": "password"})
+    print("Authenticate response:", response.json())
+    print("Authenticate response code:", response.status_code)
     return response.json().get("token")
+
 
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
 
 @app.route('/start-balloon-simulation', methods=['POST'])
 def start_balloon_simulation():
