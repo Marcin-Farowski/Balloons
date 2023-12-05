@@ -14,7 +14,9 @@ export default function Header() {
   return (
     <header className={styles.header}>      
       <div className={styles.logoConteiner}>
-        <h1 className={styles.logo}>Balloon Voyages</h1>
+        <a href="/home">
+          <h1 className={styles.logo}>Balloon Voyages</h1>
+        </a>
       </div>
       <img 
       src="/assets/icons/menu-icon.svg" 
