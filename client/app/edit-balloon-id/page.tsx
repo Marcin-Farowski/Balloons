@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@components/Header"
 import EditBalloonForm from "@components/edit-balloon-id/EditBalloonForm";
 
-function AddBalloon() {
+function EditBalloon() {
   return (
     <div>
       <Header/>
@@ -11,4 +11,4 @@ function AddBalloon() {
   );
 }
 
-export default AddBalloon;
+export default EditBalloon;

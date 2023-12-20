@@ -50,23 +50,27 @@ const Menu = ({ onClose }: { onClose: () => void }) => {
         </div>
       </a>
 
-      <div className={styles.listRow}>
-        <img
-          src="/assets/icons/history-icon.svg"
-          alt="Flight History Icon"
-          className={styles.listIcon}
-        />
-        <h1 className={styles.listText}>Flight history</h1>
-      </div>
+      <a href="/flight-history">
+        <div className={styles.listRow}>
+          <img
+            src="/assets/icons/history-icon.svg"
+            alt="Flight History Icon"
+            className={styles.listIcon}
+          />
+          <h1 className={styles.listText}>Flight history</h1>
+        </div>
+      </a>
 
-      <div className={styles.listRow}>
-        <img
-          src="/assets/icons/about-us-icon.svg"
-          alt="About Us Icon"
-          className={styles.listIcon}
-        />
-        <h1 className={styles.listText}>About us</h1>
-      </div>
+      <a href="/about-us">
+        <div className={styles.listRow}>
+          <img
+            src="/assets/icons/about-us-icon.svg"
+            alt="About Us Icon"
+            className={styles.listIcon}
+          />
+          <h1 className={styles.listText}>About us</h1>
+        </div>
+      </a>
 
       <div className={styles.lastRow}>
         <h1 className={styles.listText}>Log out</h1>

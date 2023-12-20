@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from '@styles/EditBalloonForm.module.css';
 
-export default function AddBalloonForm() {
+export default function EditBalloonList() {
 
   return (
     <div className={styles.container}>

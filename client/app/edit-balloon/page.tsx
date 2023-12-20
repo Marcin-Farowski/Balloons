@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@components/Header"
 import EditBalloonList from "@components/edit-balloon/EditBalloonList";
 
-function AddBalloon() {
+function BalloonListToEdit() {
   return (
     <div>
       <Header/>
@@ -11,4 +11,4 @@ function AddBalloon() {
   );
 }
 
-export default AddBalloon;
+export default BalloonListToEdit;
