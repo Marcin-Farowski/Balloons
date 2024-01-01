@@ -1,5 +1,5 @@
 .container {
-    width: 1000px;
+    width: 1400px;
     margin: 128px auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
     background-color: var(--clr-neutral-850);
 }
 
-.firstColumn {
+.firstColumn, .thirdColumn, .eighthColumn, .ninthColumn {
     width: 200px
 }
 
@@ -37,7 +37,7 @@
     width: 400px
 }
 
-.thirdColumn {
+.fourthColumn, .fifthColumn, .sixthColumn, .seventhColumn {
     width: 150px
 }
 
@@ -48,8 +48,4 @@
 
 .evenRow{
     font-size: 18px;
-}
-
-.editIcon {
-    height: 20px;
 }

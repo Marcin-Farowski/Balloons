@@ -10,46 +10,28 @@
 .title {
     font-size: 32px;
     font-weight: 500;
+    padding-left: 14px;
     margin-bottom: 64px;
 }
 
-.list {
-    border-collapse: collapse;
-    text-align: center;
-}
-  
-.list th,
-.list td {
-    padding: 14px;
-}
-  
-.firstRow {
-    font-size: 20px;
-    font-weight: 500;
-    background-color: var(--clr-neutral-850);
-}
-
-.firstColumn {
-    width: 200px
-}
-
-.secondColumn {
-    width: 400px
-}
-
-.thirdColumn {
-    width: 150px
-}
 
 .oddRow {
     background-color: var(--clr-neutral-850);
     font-size: 18px;
+    padding: 14px;
+    display: flex;
 }
 
 .evenRow{
     font-size: 18px;
+    padding: 14px;
+    display: flex;
 }
 
-.editIcon {
-    height: 20px;
+.firstColumn {
+    margin-right: 12px;
+}
+
+.secondColumn {
+    font-weight: 500;
 }

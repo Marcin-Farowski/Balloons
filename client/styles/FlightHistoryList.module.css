@@ -1,5 +1,5 @@
 .container {
-    width: 1000px;
+    width: 1400px;
     margin: 128px auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
     background-color: var(--clr-neutral-850);
 }
 
-.firstColumn {
+.firstColumn, .fifthColumn, .sixthColumn {
     width: 200px
 }
 
@@ -37,7 +37,7 @@
     width: 400px
 }
 
-.thirdColumn {
+.thirdColumn, .fourthColumn, .seventhColumn {
     width: 150px
 }
 
@@ -51,5 +51,5 @@
 }
 
 .editIcon {
-    height: 20px;
+    width: 25px;
 }

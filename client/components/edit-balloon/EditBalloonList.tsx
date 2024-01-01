@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from '@styles/EditBalloonList.module.css';
 
-export default function AddBalloonForm() {
+export default function EditBalloonList() {
 
   const data = [
     { name: 'Element 1', start: '51.7592° N, 19.4560° E' },
